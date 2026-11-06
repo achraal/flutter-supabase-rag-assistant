@@ -1,0 +1,21 @@
+name: smart_app_supabase
+description: Atelier Flutter + Supabase Authentication
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.0.0
+  flutter_dotenv: ^5.2.1        # Pour lire le fichier .env
+  http: ^1.2.0                  # Pour le streaming HTTP de l'API FastAPI
+  flutter_inappwebview: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - .env

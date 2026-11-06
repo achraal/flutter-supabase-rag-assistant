@@ -1,0 +1,29 @@
+# Python-generated files
+**__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*questions.txt
+
+# On garde l'arborescence mais on ignore le contenu lourd
+data/*
+!data/.gitkeep
+
+# --- RAG & Bases de données ---
+# Exclure les bases vectorielles (à adapter selon ton outil : chroma, faiss, etc.)
+*chroma_db/
+.vscode/
+.idea/
+
+# --- Sécurité ---
+.env
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
